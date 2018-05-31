@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang='en' class=''>
+
+<head>
+  <link rel='stylesheet prefetch' href='css/reset.min.css'>
+  <link rel='stylesheet prefetch' href='css/bootstrap.min.css'>
+  <link rel='stylesheet' href='css/medicalrec.css'>
+
+</head>
+
+<body>
+
+  <div >
+    <h1 class="heading">Google Chain</h1>
+  </div>
+  <div class="container">
+    <ul class="nav nav-tabs">
+
+      <li class="active">
+        <a data-toggle="pill" href="#storeText">Store Text</a>
+      </li>
+      <li>
+        <a data-toggle="pill" href="#storeDoc">Store Doc</a>
+      </li>
+      <li>
+        <a data-toggle="pill" href="#searchText">Search Text</a>
+      </li>
+      <li>
+        <a data-toggle="pill" href="#searchDoc">Search Doc</a>
+      </li>
+    </ul>
+
+    <!--Content for each tab-->
+    <div class="tab-content">
+
+
+      <!--Tab 1 for storing text-->
+      <div id="storeText" class="tab-pane fade in active">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">Vaccination Records</div>
+          <div class="panel-body">
+            <div id="storeTextMessage" class="text-center">Please wait...</div>
+            <div class="form-group">
+              <label for="childName">Child Name:</label>
+              <input type="text" class="form-control" id="childName">
+            </div>
+            <div class="form-group">
+              <label for="vaccine">Vaccine Name:</label>
+              <input type="text" class="form-control" id="vaccine">
+            </div>
+            <div class="form-row text-center">
+              <div class="col-12">
+                <button type="submit" class="btn btn-default" id="btnSaveVaccineInfo">Save Vaccine Details</button>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <!-- Store Text Tab-->
+
+
+      <!--Tab 2 for storing document -->
+
+      <div id="storeDoc" class="tab-pane fade ">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">KYC Documents</div>
+          <div class="panel-body">
+            <div id="storeDocMessage" class="text-center">Please wait...</div>
+            <div class="form-group">
+              <label for="childName">Document Type:</label>
+              <input type="text" class="form-control" id="docName">
+            </div>
+
+            <div class="form-group">
+              <input type="file" class="form-control-file" id="inputFile">
+            </div>
+            <div class="form-row text-center">
+              <div class="col-12">
+                <button type="submit" class="btn btn-default" id="btnSaveDocument">Save Document</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Store Document Tab-->
+
+
+
+      <!--Tab 3 for searching text -->
+
+      <div id="searchText" class="tab-pane fade ">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">Search Vaccinations</div>
+          <div class="panel-body">
+            <div id="searchTextMessage" class="text-center">Please wait...</div>
+
+            <div class="form-group">
+              <label for="childName">Child Name:</label>
+              <input type="text" class="form-control" id="childName">
+            </div>
+            <div class="form-row text-center">
+                <div class="col-12">
+                    <button type="submit" class="btn btn-default" id="btnShowHistory">Show History</button>
+                </div>
+              </div>
+
+            
+
+
+            <table class="table table-striped" id="vaccinehistory">
+              <caption>Vaccination History</caption>
+              <thead>
+                <tr>
+                  <th>Vaccine</th>
+                  <th>Given By</th>
+                  <th>Date</th>
+                  <th>Location</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+      <!-- Search Text Tab-->
+
+
+
+      <!--Tab 4 for searching document -->
+
+      <div id="searchDoc" class="tab-pane fade">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">Search Documents</div>
+          <div class="panel-body">
+            <div id="searchDocMessage" class="text-center">Please wait...</div>
+
+            <div class="form-group">
+              <label for="docName">Document Type:</label>
+              <input type="text" class="form-control" id="docName">
+            </div>
+            <div class="form-row text-center">
+                <div class="col-12">
+                    <button type="submit" class="btn btn-default" id="btnShowDocument">Show Documents</button>
+                </div>
+              </div>
+
+            <table class="table table-striped" id="vaccinehistory">
+              <caption>Document History</caption>
+              <thead>
+                <tr>
+                  <th>Document Name</th>
+                  <th>Uploaded By</th>
+                  <th>Date</th>
+                  <th>Hash</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+      <!-- Search Document Tab-->
+
+    </div>
+    <!-- tab content-->
+
+  </div>
+  <!-- Container -->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="/js/jquerymin.1.12.4.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="/js/bootstrap.min.js" type="application/javascript"></script>
+
+  <script src="/js/clientapp.js" type="application/javascript"></script>
+
+
+</body>
+
+
+</html>

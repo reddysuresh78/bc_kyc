@@ -1,0 +1,60 @@
+html {
+      box-sizing: border-box;
+    }
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+    body {
+      background-color: burlywood;
+      font-family: "Comfortaa", sans-serif;
+    }
+    h1 {
+      font-family: "Lobster", serif;
+    }
+    .message {
+      color: #fff;
+      font-size: 1.5em;
+      padding-bottom: 1em;
+    }
+    form label {
+      font-size: 4em;
+      font-weight: bold;
+      vertical-align: middle;
+    }
+    form input[type=radio] {
+      margin: 1em;
+      cursor: pointer;
+    }
+    form fieldset {
+      display: block;
+      opacity: 1;
+      transition: all ease 1s;
+    }
+    form.game-on fieldset {
+      opacity: 0;
+      display: none;
+    }
+    form.game-on button {
+      opacity: 1;
+      display: block;
+      margin: 0 auto;
+    }
+    #grid-section {
+      margin: 3em 0;
+    }
+    #grid {
+      width: 300px;
+      margin: 0 auto;
+    }
+    div.centermessage{
+        text-align : center ;
+         
+    }
+    
+    .heading {
+      text-align: center;
+      margin: 50px auto;
+
+    }
